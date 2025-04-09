@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Drone</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body { margin: 0; }
+    </style>
+    <script type="importmap">
+        {
+            "imports": {
+              "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+              "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+            }
+          }
+    </script>
+	</head>
+
+	<body>
+        <div class="button-group">
+            <button id="play" class="button">Play</button>
+            <button id="stop" class="button">Stop</button>
+        </div>
+        <div id="loading" class="loading">
+          <p>Loading ...</p>
+        </div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

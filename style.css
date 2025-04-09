@@ -1,0 +1,40 @@
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.button-group {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    top: 20px;
+    right: 50px;
+}
+
+.loading {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.loading p {
+    color: white;
+    opacity: 1;
+}
