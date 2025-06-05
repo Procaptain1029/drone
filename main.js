@@ -75,14 +75,15 @@ controls.update();
 window.addEventListener( 'resize', onWindowResize );
 
 function loadAsset() {
-    loader.load( '/models/drone.glb', function ( gltf ) {
+    loader.load( '/models/01.glb', function ( gltf ) {
         const model = gltf.scene;
+        console.log(model);
         model.scale.set(1, 1, 1)
         model.position.set(0, 0.2, 0);
-        rotor1 = model.children[0].children[1].children[0].children[4].children[0].children[1].children[0].children[0].children[0];
-        rotor2 = model.children[0].children[1].children[0].children[4].children[0].children[1].children[1].children[0].children[0];
-        rotor3 = model.children[0].children[1].children[0].children[8].children[0].children[1].children[0].children[0].children[0];
-        rotor4 =model.children[0].children[1].children[0].children[8].children[0].children[1].children[1].children[0].children[0];
+        // rotor1 = model.children[0].children[1].children[0].children[4].children[0].children[1].children[0].children[0].children[0];
+        // rotor2 = model.children[0].children[1].children[0].children[4].children[0].children[1].children[1].children[0].children[0];
+        // rotor3 = model.children[0].children[1].children[0].children[8].children[0].children[1].children[0].children[0].children[0];
+        // rotor4 =model.children[0].children[1].children[0].children[8].children[0].children[1].children[1].children[0].children[0];
         scene.add( model );
         loading.style.display = 'none';
     });
