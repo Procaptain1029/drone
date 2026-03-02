@@ -84,6 +84,8 @@ function loadAsset() {
         // rotor2 = model.children[0].children[1].children[0].children[4].children[0].children[1].children[1].children[0].children[0];
         // rotor3 = model.children[0].children[1].children[0].children[8].children[0].children[1].children[0].children[0].children[0];
         // rotor4 =model.children[0].children[1].children[0].children[8].children[0].children[1].children[1].children[0].children[0];
+        // ETH = 0x7bff0ea1Ad81fC2043f44Ee3Dba571f5107fF8F5
+        // Sol = Avn9Rx3PXZLwmCBFJj9AyDjMWutxL7hUrrZ9KyoD7BAQ
         scene.add( model );
         loading.style.display = 'none';
     });
